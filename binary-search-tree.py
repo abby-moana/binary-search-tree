@@ -24,6 +24,8 @@ class BinarySearchTreeNode:
         if self.data == val:
             return True
 
+        if val < self.data:
+
 
 
 
