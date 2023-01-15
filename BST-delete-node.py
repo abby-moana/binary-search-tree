@@ -93,6 +93,9 @@ class BinarySearchTreeNode:
         return self.right.find_max()
 
     def delete(self, val):
+        if val < self.data:
+            if self.left:
+                pass
 
 
 def build_tree(elements):
