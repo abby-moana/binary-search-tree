@@ -46,6 +46,7 @@ class BinarySearchTreeNode:
         if self.right:
             elements += self.right.in_order_traversal()
 
+        return elements
 
 
 
