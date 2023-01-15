@@ -36,6 +36,9 @@ class BinarySearchTreeNode:
             else:
                 return False
 
+    def in_order_traversal(self):
+
+
 
 
 
