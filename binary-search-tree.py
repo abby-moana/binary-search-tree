@@ -9,8 +9,13 @@ class BinarySearchTreeNode:
             return
 
         if data < self.data:
-            self.left.add_child(data)
+            if self.left:
+                self.left.add_child(data)
+            else:
+                self.left = BinarySearchTreeNode(data)
+
         else:
-            self.left = BinarySearchTreeNode(data)
+
+
 
 
