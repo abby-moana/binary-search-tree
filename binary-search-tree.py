@@ -30,6 +30,9 @@ class BinarySearchTreeNode:
             else:
                 return False
 
+        if val > self.data:
+
+
 
 
 
