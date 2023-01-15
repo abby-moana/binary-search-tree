@@ -127,5 +127,5 @@ def build_tree(elements):
 if __name__ == '__main__':
     numbers_tree =build_tree([17, 4, 1, 20, 9, 23, 18, 34])
     numbers_tree.delete(20)
-    print(numbers_tree.in_order_traversal())
+    print("After deleting 20: ", numbers_tree.in_order_traversal())
 
