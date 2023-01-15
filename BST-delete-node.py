@@ -111,6 +111,7 @@ class BinarySearchTreeNode:
             self.data = min_val
             self.right = self.right.delete(min_val)
 
+        return self
 
 
 def build_tree(elements):
@@ -121,5 +122,6 @@ def build_tree(elements):
         root.add_child(elements[i])
 
     return root
+
 
 
