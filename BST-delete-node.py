@@ -107,7 +107,9 @@ class BinarySearchTreeNode:
             if self.right is None:
                 return self.right
 
-            self.right
+            min_val =  self.right.find_min()
+            self.data = min_val
+
 
 
 def build_tree(elements):
