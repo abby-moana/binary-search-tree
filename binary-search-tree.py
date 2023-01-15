@@ -49,12 +49,12 @@ class BinarySearchTreeNode:
         return elements
 
     def pre_order_traversal(self):
-        elements = []
+        elements = [self.data]
         if self.left:
             elements += self.left.pre_order_traversal()
 
         if self.right:
-            elements += self.left.pre_order_traversal()
+            elements += self.right.pre_order_traversal()
 
         return elements
 
@@ -64,17 +64,23 @@ class BinarySearchTreeNode:
             elements += self.left.post_order_traversal()
 
         if self.right:
-            elements += self.left.post_order_traversal()
+            elements += self.right.post_order_traversal()
+
+        elements.append(self.data)
 
         return elements
 
     def calculate_sum(self):
         if self.left:
             left = self.left.calculate_sum()
+        else:
+            left = 0
         if self.right:
             right = self.right.calculate_sum()
+        else:
+            right = 0
 
-        return self.data + left +right
+        return self.data + left + right
 
     def find_min(self):
         if self.left is None:
