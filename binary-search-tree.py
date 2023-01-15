@@ -48,6 +48,9 @@ class BinarySearchTreeNode:
 
         return elements
 
+def build_tree(elements):
+
+
 
 
 
