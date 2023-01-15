@@ -100,7 +100,14 @@ class BinarySearchTreeNode:
             if self.right
                 self.right.delete(val)
         else:
-            if
+            if self.left is None and self.right is None:
+                return None
+            if self.left is None:
+                return self.right
+            if self.right is None:
+                return self.right
+
+            self.right
 
 
 def build_tree(elements):
