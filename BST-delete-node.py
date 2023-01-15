@@ -95,7 +95,12 @@ class BinarySearchTreeNode:
     def delete(self, val):
         if val < self.data:
             if self.left:
-                pass
+                self.left.delete(val)
+        elif val> self.data:
+            if self.right
+                self.right.delete(val)
+        else:
+            if
 
 
 def build_tree(elements):
