@@ -4,3 +4,5 @@ class BinarySearchTreeNode:
          self.left = None
          self.right = None
 
+    def add_child(self, data):
+
