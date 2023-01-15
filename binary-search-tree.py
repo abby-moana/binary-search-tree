@@ -86,6 +86,7 @@ class BinarySearchTreeNode:
             return self.data
         return self.right.find_max()
 
+
 def build_tree(elements):
     print("Building tree with these elements: ", elements)
     root = BinarySearchTreeNode(elements[0])
@@ -99,7 +100,9 @@ def build_tree(elements):
 if __name__ == '__main__':
     numbers = [17, 4, 1, 20, 9, 23, 18, 34]
     numbers_tree = build_tree(numbers)
-
+    print(numbers_tree.find_min())
+    print(numbers_tree.find_max())
+    print(numbers_tree.calculate_sum())
     print(numbers_tree.in_order_traversal())
     print(numbers_tree.pre_order_traversal())
     print(numbers_tree.post_order_traversal())
