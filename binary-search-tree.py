@@ -55,6 +55,8 @@ def build_tree(elements):
     for i in range(1, len(elements)):
         root.add_child(elements[i])
 
+    return root
+
 
 
 
