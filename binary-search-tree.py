@@ -57,6 +57,8 @@ def build_tree(elements):
 
     return root
 
+if __name__ == '__main__':
+
 
 
 
