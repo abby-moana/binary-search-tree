@@ -21,6 +21,8 @@ class BinarySearchTreeNode:
                 self.right = BinarySearchTreeNode(data)
 
     def search(self, val):
+        if self.data == val:
+            return True
 
 
 
